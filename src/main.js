@@ -1,6 +1,10 @@
 const galleryContainer = document.querySelector('.react-gallery');
 
-let imgUrls = []; //decide on images later
+let imgUrls = [
+  'https://i.ytimg.com/vi/2Y1ZyjGdPeE/maxresdefault.jpg',
+  'https://i.ytimg.com/vi/lCCWQ6ziAyc/hqdefault.jpg',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVd6kXIJNQlHycuS8jhAj5MMgdEBk2qjd0AEo2lCPQP9Wdj5qq'
+]; //decide on images later
 
 //Component for gallery image
 
