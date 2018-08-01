@@ -37,6 +37,25 @@
    display: block;
    position: absolute;
    top: 50%;
+   left: 50%;
+   font-size: 2rem;
+   color: #fff;
+   cursor: pointer;
+   opacity: 0;
+   transform: translate(-50%, -50%);
+   transition: $transition;
+
+   &:focus, 
+   &:hover {
+     color: $black;
+   }
  }
+
+.gallery-thumbnail:focus ~ .card-icon-open, 
+.gallery-thumbnail:hover ~ .card-icon-open, 
+.gallery-thumbnail ~ .card-icon-open:focus, 
+.gallery-thumbnail ~ .card-icon-open:hover {
+  opacity: 1;
+}
 
 
