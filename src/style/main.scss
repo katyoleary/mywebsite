@@ -68,3 +68,27 @@ modal-overlay {
   background: rbga(21,21,21,.75);
 }
 
+.modal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  padding: 0;
+  overflow: auto;
+  border-radius: $radius;
+  transform: translate(-50%, -50%);
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 8px;
+  font-size: 1.5rem;
+  color: $black;
+  transition: $transition;
+
+  &:focus, 
+  &:hover {
+    color: #fff;
+  }
+}
